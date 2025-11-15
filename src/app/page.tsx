@@ -1332,6 +1332,9 @@ function HomeComponent() {
             <Link href="/politica-de-privacidade" className="transition hover:text-white">
               Política de Privacidade
             </Link>
+            <Link href="/politica-de-cookies" className="transition hover:text-white">
+              Política de Cookies
+            </Link>
             <Link href="/termos-de-uso" className="transition hover:text-white">
               Termos de Uso
             </Link>

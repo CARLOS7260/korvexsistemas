@@ -4,7 +4,7 @@ const baseUrl = "https://korvex.com.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const routes = ["", "/politica-de-privacidade", "/termos-de-uso"];
+  const routes = ["", "/politica-de-privacidade", "/politica-de-cookies", "/termos-de-uso"];
 
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
