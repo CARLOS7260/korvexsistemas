@@ -253,11 +253,13 @@ function HomeComponent() {
                 className="text-5xl font-extrabold leading-tight tracking-tight text-white text-shadow-strong sm:text-6xl lg:text-7xl opacity-100"
                 style={{ fontWeight: 800 }}
               >
-                <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
                   Software sob medida
                 </span>
                 <br />
-                que transforma sua empresa em líder digital
+                <span className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent">
+                  que transforma sua empresa em líder digital
+                </span>
               </motion.h1>
 
               {/* Descrição com hierarquia de cores */}
@@ -369,7 +371,9 @@ function HomeComponent() {
                   Nossas Especialidades
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  Desenvolvemos qualquer sistema que sua empresa precise
+                  <span className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent">
+                    Desenvolvemos qualquer sistema que sua empresa precise
+                  </span>
                 </h2>
                 <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                   Do conceito à implementação, criamos soluções tecnológicas personalizadas para diferentes segmentos e necessidades.
@@ -450,7 +454,9 @@ function HomeComponent() {
                   O Que Desenvolvemos
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  Sistemas personalizados que resolvem problemas reais
+                  <span className="bg-gradient-to-r from-violet-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                    Sistemas personalizados que resolvem problemas reais
+                  </span>
                 </h2>
                 <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                   Cada projeto é único. Desenvolvemos soluções sob medida que se adaptam perfeitamente às necessidades da sua empresa.
@@ -566,7 +572,9 @@ function HomeComponent() {
                   Stack Tecnológico
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  Tecnologias modernas que garantem performance e escalabilidade
+                  <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
+                    Tecnologias modernas que garantem performance e escalabilidade
+                  </span>
                 </h2>
                 <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                   Utilizamos as melhores ferramentas do mercado para construir sistemas robustos, seguros e de alta performance.
@@ -658,7 +666,9 @@ function HomeComponent() {
                   Nossa Diferenciação
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  Por que escolher a Korvex para seu projeto?
+                  <span className="bg-gradient-to-r from-emerald-300 via-teal-300 to-lime-200 bg-clip-text text-transparent">
+                    Por que escolher a Korvex para seu projeto?
+                  </span>
                 </h2>
                 <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                   Não somos apenas desenvolvedores. Somos parceiros estratégicos que transformam ideias em soluções tecnológicas de alto impacto.
@@ -744,7 +754,9 @@ function HomeComponent() {
                     Soluções Personalizadas
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                    Sistemas sob medida que se adaptam ao seu negócio
+                    <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">
+                      Sistemas sob medida que se adaptam ao seu negócio
+                    </span>
                   </h2>
                   <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                     Não force seu processo de negócio em um sistema genérico. Criamos a solução perfeita para sua realidade.
@@ -830,7 +842,9 @@ function HomeComponent() {
                   Diferenciais Exclusivos
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  O que torna a Korvex única no mercado
+                  <span className="bg-gradient-to-r from-blue-300 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+                    O que torna a Korvex única no mercado
+                  </span>
                 </h2>
                 <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                   Mais do que desenvolvimento, oferecemos uma experiência completa de transformação digital.
@@ -909,7 +923,9 @@ function HomeComponent() {
             <ScrollReveal>
               <div className="text-center opacity-100 mb-2 sm:mb-3 md:mb-4">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
-                Exemplos de Sistemas Desenvolvidos
+                <span className="bg-gradient-to-r from-blue-200 via-cyan-200 to-indigo-300 bg-clip-text text-transparent">
+                  Exemplos de Sistemas Desenvolvidos
+                </span>
               </h2>
               <p className="mx-auto mt-3 max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                 Veja exemplos de funcionalidades que desenvolvemos em diferentes projetos. Cada sistema é personalizado 
@@ -974,7 +990,9 @@ function HomeComponent() {
                   Como funciona
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
-                  Do conceito à operação: metodologia que acelera resultados
+                  <span className="bg-gradient-to-r from-indigo-200 via-blue-200 to-cyan-200 bg-clip-text text-transparent">
+                    Do conceito à operação: metodologia que acelera resultados
+                  </span>
                 </h2>
                 <p className="text-lg leading-relaxed text-[#94a3b8]">
                   <strong className="text-white">Não entregamos apenas código.</strong> Acompanhamos cada etapa do projeto: 
@@ -1083,7 +1101,9 @@ function HomeComponent() {
                     Prova social
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
-                    Resultados comprovados que geram confiança
+                    <span className="bg-gradient-to-r from-emerald-300 via-teal-300 to-green-200 bg-clip-text text-transparent">
+                      Resultados comprovados que geram confiança
+                    </span>
                   </h2>
                   <p className="text-lg leading-relaxed text-[#94a3b8]">
                     <strong className="text-white">Mais de 50 empresas já transformaram seus processos com a Korvex.</strong> 
@@ -1139,7 +1159,9 @@ function HomeComponent() {
           <div className="relative mx-auto max-w-[1280px] px-6 sm:px-8 md:px-12">
             <div className="text-center opacity-100 mb-6 sm:mb-8 md:mb-10">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
-                Interfaces reais que inspiram sua equipe
+                <span className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent">
+                  Interfaces reais que inspiram sua equipe
+                </span>
               </h2>
               <p className="mx-auto mt-3 max-w-3xl text-lg leading-relaxed text-[#94a3b8] lg:text-xl">
                 Painéis intuitivos, cards 3D e indicadores claros. Veja como a Korvex combina design e performance para
