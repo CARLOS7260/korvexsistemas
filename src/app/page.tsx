@@ -255,14 +255,20 @@ function HomeComponent() {
               >
                 <span
                   className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent"
-                  style={{ textShadow: "0 25px 60px rgba(79,70,229,0.55)" }}
+                  style={{
+                    textShadow:
+                      "0 30px 85px rgba(79,70,229,0.65), 0 18px 48px rgba(59,130,246,0.55), 0 6px 20px rgba(15,23,42,0.9)",
+                  }}
                 >
                   Software sob medida
                 </span>
                 <br />
                 <span
                   className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent"
-                  style={{ textShadow: "0 20px 55px rgba(45,212,191,0.45)" }}
+                  style={{
+                    textShadow:
+                      "0 28px 80px rgba(45,212,191,0.6), 0 16px 44px rgba(14,165,233,0.5), 0 6px 18px rgba(15,23,42,0.85)",
+                  }}
                 >
                   que transforma sua empresa em líder digital
                 </span>
@@ -379,7 +385,10 @@ function HomeComponent() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
                     className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent"
-                    style={{ textShadow: "0 18px 45px rgba(99,102,241,0.45)" }}
+                    style={{
+                      textShadow:
+                        "0 26px 72px rgba(99,102,241,0.55), 0 16px 42px rgba(59,130,246,0.5), 0 5px 16px rgba(15,23,42,0.85)",
+                    }}
                   >
                     Desenvolvemos qualquer sistema que sua empresa precise
                   </span>
@@ -465,7 +474,10 @@ function HomeComponent() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
                     className="bg-gradient-to-r from-violet-300 via-purple-300 to-pink-300 bg-clip-text text-transparent"
-                    style={{ textShadow: "0 20px 55px rgba(168,85,247,0.45)" }}
+                    style={{
+                      textShadow:
+                        "0 28px 78px rgba(168,85,247,0.58), 0 17px 46px rgba(244,114,182,0.45), 0 6px 18px rgba(15,23,42,0.85)",
+                    }}
                   >
                     Sistemas personalizados que resolvem problemas reais
                   </span>
@@ -586,7 +598,10 @@ function HomeComponent() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
                     className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent"
-                    style={{ textShadow: "0 18px 45px rgba(14,165,233,0.45)" }}
+                    style={{
+                      textShadow:
+                        "0 26px 72px rgba(14,165,233,0.55), 0 16px 40px rgba(14,116,144,0.45), 0 5px 16px rgba(15,23,42,0.85)",
+                    }}
                   >
                     Tecnologias modernas que garantem performance e escalabilidade
                   </span>
@@ -683,7 +698,10 @@ function HomeComponent() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
                     className="bg-gradient-to-r from-emerald-300 via-teal-300 to-lime-200 bg-clip-text text-transparent"
-                    style={{ textShadow: "0 18px 45px rgba(16,185,129,0.5)" }}
+                    style={{
+                      textShadow:
+                        "0 24px 68px rgba(16,185,129,0.58), 0 15px 38px rgba(132,204,22,0.45), 0 5px 16px rgba(7,14,28,0.85)",
+                    }}
                   >
                     Por que escolher a Korvex para seu projeto?
                   </span>
@@ -774,7 +792,10 @@ function HomeComponent() {
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                     <span
                       className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent"
-                      style={{ textShadow: "0 20px 55px rgba(217,70,239,0.45)" }}
+                      style={{
+                        textShadow:
+                          "0 28px 78px rgba(217,70,239,0.58), 0 17px 46px rgba(236,72,153,0.45), 0 6px 18px rgba(15,23,42,0.85)",
+                      }}
                     >
                       Sistemas sob medida que se adaptam ao seu negócio
                     </span>
@@ -865,7 +886,10 @@ function HomeComponent() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
                     className="bg-gradient-to-r from-blue-300 via-sky-300 to-indigo-400 bg-clip-text text-transparent"
-                    style={{ textShadow: "0 18px 45px rgba(59,130,246,0.45)" }}
+                    style={{
+                      textShadow:
+                        "0 26px 72px rgba(59,130,246,0.55), 0 16px 42px rgba(14,165,233,0.45), 0 5px 16px rgba(15,23,42,0.85)",
+                    }}
                   >
                     O que torna a Korvex única no mercado
                   </span>
@@ -949,7 +973,10 @@ function HomeComponent() {
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
                 <span
                   className="bg-gradient-to-r from-blue-200 via-cyan-200 to-indigo-300 bg-clip-text text-transparent"
-                  style={{ textShadow: "0 15px 40px rgba(14,165,233,0.4)" }}
+                  style={{
+                    textShadow:
+                      "0 22px 62px rgba(14,165,233,0.48), 0 12px 34px rgba(59,130,246,0.38), 0 4px 14px rgba(8,13,26,0.85)",
+                  }}
                 >
                   Exemplos de Sistemas Desenvolvidos
                 </span>
@@ -1019,7 +1046,10 @@ function HomeComponent() {
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                   <span
                     className="bg-gradient-to-r from-indigo-200 via-blue-200 to-cyan-200 bg-clip-text text-transparent"
-                    style={{ textShadow: "0 15px 40px rgba(59,130,246,0.35)" }}
+                    style={{
+                      textShadow:
+                        "0 22px 62px rgba(59,130,246,0.46), 0 12px 34px rgba(14,165,233,0.36), 0 4px 14px rgba(8,13,26,0.85)",
+                    }}
                   >
                     Do conceito à operação: metodologia que acelera resultados
                   </span>
@@ -1133,7 +1163,10 @@ function HomeComponent() {
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                     <span
                       className="bg-gradient-to-r from-emerald-300 via-teal-300 to-green-200 bg-clip-text text-transparent"
-                      style={{ textShadow: "0 18px 45px rgba(16,185,129,0.45)" }}
+                      style={{
+                        textShadow:
+                          "0 24px 66px rgba(16,185,129,0.6), 0 14px 36px rgba(34,197,94,0.45), 0 5px 16px rgba(7,14,28,0.85)",
+                      }}
                     >
                       Resultados comprovados que geram confiança
                     </span>
@@ -1194,7 +1227,10 @@ function HomeComponent() {
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
                 <span
                   className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent"
-                  style={{ textShadow: "0 18px 45px rgba(79,70,229,0.45)" }}
+                  style={{
+                    textShadow:
+                      "0 26px 72px rgba(79,70,229,0.55), 0 16px 42px rgba(59,130,246,0.5), 0 5px 16px rgba(15,23,42,0.85)",
+                  }}
                 >
                   Interfaces reais que inspiram sua equipe
                 </span>
