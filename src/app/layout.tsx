@@ -15,48 +15,55 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+const siteUrl = "https://korvex.com.br";
+const siteName = "Korvex Sistemas";
+const siteDescription =
+  "Software sob medida, automação comercial, PDV omnichannel, integrações e aplicativos para varejo e indústria. Planejamos, desenvolvemos e operamos soluções digitais completas para acelerar resultados.";
+
 export const metadata: Metadata = {
-  title: "Korvex — Desenvolvimento de Software Sob Medida para Empresas",
-  description:
-    "Desenvolvemos sistemas personalizados, aplicativos web e mobile, integrações e automações. Transforme suas necessidades em soluções tecnológicas que impulsionam resultados.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${siteName} | Software sob medida, PDV e automação comercial`,
+    template: `%s | ${siteName}`,
+  },
+  description: siteDescription,
   keywords: [
-    "desenvolvimento de software sob medida",
-    "sistemas personalizados",
-    "aplicativos web e mobile",
+    "software sob medida",
     "desenvolvimento de sistemas",
-    "automação de processos",
-    "integração de sistemas",
     "ERP personalizado",
-    "CRM sob medida",
-    "sistema PDV",
-    "e-commerce personalizado",
-    "aplicativos iOS Android",
-    "desenvolvimento de software Brasil",
+    "PDV omnichannel",
+    "automação comercial",
+    "integração de sistemas",
+    "apps corporativos",
+    "consultoria tecnológica",
+    "Korvex Sistemas",
+    "desenvolvimento Next.js",
   ],
-  metadataBase: new URL("https://korvex.com.br"),
+  category: "technology",
+  authors: [{ name: siteName, url: siteUrl }],
+  creator: siteName,
+  publisher: siteName,
   openGraph: {
-    title: "Korvex — Desenvolvimento de Software Sob Medida",
-    description:
-      "Desenvolvemos qualquer sistema que sua empresa precise: sistemas de gestão, aplicativos, e-commerce, automações e integrações. Do zero ao deploy.",
-    url: "https://korvex.com.br",
-    siteName: "Korvex Platform",
+    title: `${siteName} | Software sob medida, PDV e automação comercial`,
+    description: siteDescription,
+    url: siteUrl,
+    siteName,
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: "/korvex-3d-06.png",
+        url: `${siteUrl}/korvex-3d-06.png`,
         width: 1200,
         height: 630,
-        alt: "Korvex Platform - Sistema de gestão para varejo de moda",
+        alt: `${siteName} - Plataforma completa de software sob medida`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Korvex Platform — Automação para o varejo de moda",
-    description:
-      "Gestão de estoque, PDV omnichannel e campanhas de WhatsApp automatizadas em um único sistema.",
-    images: ["/korvex-3d-06.png"],
+    title: `${siteName} | Software sob medida e automação`,
+    description: siteDescription,
+    images: [`${siteUrl}/korvex-3d-06.png`],
   },
   robots: {
     index: true,
@@ -70,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://korvex.com.br",
+    canonical: siteUrl,
   },
 };
 
@@ -82,7 +89,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Korvex Platform",
+    name: siteName,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     offers: {
@@ -99,8 +106,8 @@ export default function RootLayout({
     },
     provider: {
       "@type": "Organization",
-      name: "Korvex Sistemas",
-      url: "https://korvex.com.br",
+      name: siteName,
+      url: siteUrl,
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+55-51-98033-9085",
