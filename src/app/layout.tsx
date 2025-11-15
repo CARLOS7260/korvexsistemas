@@ -114,6 +114,9 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className="bg-[#0f172a]">
+      <head>
+        <link rel="preload" as="image" href="/korvex-3d-06.webp" type="image/webp" fetchPriority="high" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0f172a] text-[#f3f4f6]`}
       >

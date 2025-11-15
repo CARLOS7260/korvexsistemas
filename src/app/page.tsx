@@ -51,6 +51,14 @@ import {
 
 const heroParticles = [{ top: "30%", left: "55%", size: "w-40 h-40", delay: 0 }];
 
+const heroBlurDataURL =
+  "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADQBACdASogACAAPtFapU0oJSOiKA1RABoJYwAD46w9+K27Ab3sSDggJjeRyz6VwAD++Q6RagPRQ8ON1SWsUNbs62WupZt6zzMbs6xO+dkO1xuAk5Ka5uman03RM/zP96/9U7vhTnrKXskRZx4ByZQhIzab8xU6oWGIN1fxh/kq7sZxhsHYGtZ/Z6KC4m0ngMjBgUjFvJ7IgdpIC4oAAA==";
+
+const heroGradientStyle = {
+  backgroundImage:
+    "radial-gradient(circle at 20% 30%, rgba(59,130,246,0.24), transparent 50%), radial-gradient(circle at 80% 70%, rgba(99,102,241,0.2), transparent 55%), radial-gradient(circle at 50% 50%, rgba(139,92,246,0.16), transparent 60%)",
+} as const;
+
 const highlightCards = [
   {
     title: "Controle de Estoque Inteligente",
@@ -128,19 +136,19 @@ const iconAnimations = {
 
 const carouselItems = [
   {
-    src: "/Screenshot_206.png",
+    src: "/Screenshot_206.webp",
     alt: "Tela de login do Korvex PDV com identidade visual moderna",
   },
   {
-    src: "/Screenshot_207.png",
+    src: "/Screenshot_207.webp",
     alt: "Painel administrativo do Korvex PDV com catálogo e carrinho",
   },
   {
-    src: "/Screenshot_208.png",
+    src: "/Screenshot_208.webp",
     alt: "Emissão fiscal com NFC-e e NF-e integradas no Korvex PDV",
   },
   {
-    src: "/Screenshot_209.png",
+    src: "/Screenshot_209.webp",
     alt: "DANFE detalhado gerado pelo Korvex com dados completos do cliente",
   },
 ];
@@ -152,10 +160,8 @@ function HomeComponent() {
         {/* Gradiente animado de fundo */}
         <div className="absolute inset-0 gradient-animated opacity-70" />
         
-        {/* Camadas de profundidade - reduzidas ~20% para melhor performance */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.24),transparent_50%)] blur-2xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(99,102,241,0.2),transparent_55%)] blur-2xl" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(139,92,246,0.16),transparent_60%)] blur-xl" />
+        {/* Camada única de gradiente para reduzir sobrecarga */}
+        <div className="absolute inset-0 blur-2xl" style={heroGradientStyle} />
         
         {/* Overlay escuro para contraste - bem mais transparente */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a]/40 via-[#0f172a]/30 to-[#0f172a]/50" />
@@ -211,12 +217,15 @@ function HomeComponent() {
               >
                 <div className="relative">
                   <Image
-                    src="/korvex-3d-06.png"
+                    src="/korvex-3d-06.webp"
                     alt="Logotipo Korvex em 3D"
                     width={280}
                     height={200}
                     className="h-auto w-56 drop-shadow-[0_40px_80px_rgba(59,130,246,0.6)] md:w-64 lg:w-72"
                     priority
+                    fetchPriority="high"
+                    placeholder="blur"
+                    blurDataURL={heroBlurDataURL}
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl -z-10" />
                 </div>
@@ -324,7 +333,7 @@ function HomeComponent() {
                 <div className="glass-strong rounded-[2.5rem] border border-white/20 p-8 shadow-2xl glow-blue-strong">
                   <div className="relative overflow-hidden rounded-3xl border border-white/30 shadow-[0_50px_120px_-60px_rgba(59,130,246,0.6)]">
                     <Image
-                      src="/Screenshot_207.png"
+                      src="/Screenshot_207.webp"
                       alt="Interface principal Korvex"
                       width={680}
                       height={520}
