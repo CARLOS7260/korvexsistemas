@@ -143,7 +143,7 @@ const carouselItems = [
     src: "/Screenshot_209.png",
     alt: "DANFE detalhado gerado pelo Korvex com dados completos do cliente",
   },
-] as const;
+];
 
 function HomeComponent() {
   return (
