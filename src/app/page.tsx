@@ -253,11 +253,17 @@ function HomeComponent() {
                 className="text-5xl font-extrabold leading-tight tracking-tight text-white text-shadow-strong sm:text-6xl lg:text-7xl opacity-100"
                 style={{ fontWeight: 800 }}
               >
-                <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                <span
+                  className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent"
+                  style={{ textShadow: "0 25px 60px rgba(79,70,229,0.55)" }}
+                >
                   Software sob medida
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent">
+                <span
+                  className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent"
+                  style={{ textShadow: "0 20px 55px rgba(45,212,191,0.45)" }}
+                >
                   que transforma sua empresa em líder digital
                 </span>
               </motion.h1>
@@ -371,7 +377,10 @@ function HomeComponent() {
                   Nossas Especialidades
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  <span className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent">
+                  <span
+                    className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent"
+                    style={{ textShadow: "0 18px 45px rgba(99,102,241,0.45)" }}
+                  >
                     Desenvolvemos qualquer sistema que sua empresa precise
                   </span>
                 </h2>
@@ -454,7 +463,10 @@ function HomeComponent() {
                   O Que Desenvolvemos
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  <span className="bg-gradient-to-r from-violet-300 via-purple-300 to-pink-300 bg-clip-text text-transparent">
+                  <span
+                    className="bg-gradient-to-r from-violet-300 via-purple-300 to-pink-300 bg-clip-text text-transparent"
+                    style={{ textShadow: "0 20px 55px rgba(168,85,247,0.45)" }}
+                  >
                     Sistemas personalizados que resolvem problemas reais
                   </span>
                 </h2>
@@ -572,7 +584,10 @@ function HomeComponent() {
                   Stack Tecnológico
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  <span className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent">
+                  <span
+                    className="bg-gradient-to-r from-cyan-300 via-sky-300 to-blue-400 bg-clip-text text-transparent"
+                    style={{ textShadow: "0 18px 45px rgba(14,165,233,0.45)" }}
+                  >
                     Tecnologias modernas que garantem performance e escalabilidade
                   </span>
                 </h2>
@@ -666,7 +681,10 @@ function HomeComponent() {
                   Nossa Diferenciação
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  <span className="bg-gradient-to-r from-emerald-300 via-teal-300 to-lime-200 bg-clip-text text-transparent">
+                  <span
+                    className="bg-gradient-to-r from-emerald-300 via-teal-300 to-lime-200 bg-clip-text text-transparent"
+                    style={{ textShadow: "0 18px 45px rgba(16,185,129,0.5)" }}
+                  >
                     Por que escolher a Korvex para seu projeto?
                   </span>
                 </h2>
@@ -754,7 +772,10 @@ function HomeComponent() {
                     Soluções Personalizadas
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                    <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent">
+                    <span
+                      className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent"
+                      style={{ textShadow: "0 20px 55px rgba(217,70,239,0.45)" }}
+                    >
                       Sistemas sob medida que se adaptam ao seu negócio
                     </span>
                   </h2>
@@ -842,7 +863,10 @@ function HomeComponent() {
                   Diferenciais Exclusivos
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
-                  <span className="bg-gradient-to-r from-blue-300 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+                  <span
+                    className="bg-gradient-to-r from-blue-300 via-sky-300 to-indigo-400 bg-clip-text text-transparent"
+                    style={{ textShadow: "0 18px 45px rgba(59,130,246,0.45)" }}
+                  >
                     O que torna a Korvex única no mercado
                   </span>
                 </h2>
@@ -923,7 +947,10 @@ function HomeComponent() {
             <ScrollReveal>
               <div className="text-center opacity-100 mb-2 sm:mb-3 md:mb-4">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
-                <span className="bg-gradient-to-r from-blue-200 via-cyan-200 to-indigo-300 bg-clip-text text-transparent">
+                <span
+                  className="bg-gradient-to-r from-blue-200 via-cyan-200 to-indigo-300 bg-clip-text text-transparent"
+                  style={{ textShadow: "0 15px 40px rgba(14,165,233,0.4)" }}
+                >
                   Exemplos de Sistemas Desenvolvidos
                 </span>
               </h2>
@@ -990,7 +1017,10 @@ function HomeComponent() {
                   Como funciona
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
-                  <span className="bg-gradient-to-r from-indigo-200 via-blue-200 to-cyan-200 bg-clip-text text-transparent">
+                  <span
+                    className="bg-gradient-to-r from-indigo-200 via-blue-200 to-cyan-200 bg-clip-text text-transparent"
+                    style={{ textShadow: "0 15px 40px rgba(59,130,246,0.35)" }}
+                  >
                     Do conceito à operação: metodologia que acelera resultados
                   </span>
                 </h2>
@@ -1101,7 +1131,10 @@ function HomeComponent() {
                     Prova social
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
-                    <span className="bg-gradient-to-r from-emerald-300 via-teal-300 to-green-200 bg-clip-text text-transparent">
+                    <span
+                      className="bg-gradient-to-r from-emerald-300 via-teal-300 to-green-200 bg-clip-text text-transparent"
+                      style={{ textShadow: "0 18px 45px rgba(16,185,129,0.45)" }}
+                    >
                       Resultados comprovados que geram confiança
                     </span>
                   </h2>
@@ -1159,7 +1192,10 @@ function HomeComponent() {
           <div className="relative mx-auto max-w-[1280px] px-6 sm:px-8 md:px-12">
             <div className="text-center opacity-100 mb-6 sm:mb-8 md:mb-10">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
-                <span className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent">
+                <span
+                  className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent"
+                  style={{ textShadow: "0 18px 45px rgba(79,70,229,0.45)" }}
+                >
                   Interfaces reais que inspiram sua equipe
                 </span>
               </h2>
