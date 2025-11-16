@@ -10,6 +10,25 @@ html {
   background: #0f172a;
 }
 
+/* Animação de gradiente para texto com bg-clip-text */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Classe utilitária para animar gradientes de texto */
+.gradient-animated-text {
+  background-size: 200% 200% !important;
+  animation: gradient-shift 8s ease-in-out infinite;
+}
+
 @keyframes gradient-shift {
   0%, 100% {
     background-position: 0% 50%;

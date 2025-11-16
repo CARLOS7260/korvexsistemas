@@ -254,19 +254,15 @@ function HomeComponent() {
                 style={{ fontWeight: 800 }}
               >
                 <span
-                  className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent"
+                  className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent gradient-animated-text"
                   style={{
                     textShadow: `
-                      0px -2px 3px rgba(255,255,255,0.8),
-                      1px 1px 0px rgba(0,0,0,0.25),
-                      2px 2px 0px rgba(0,0,0,0.23),
-                      3px 3px 1px rgba(0,0,0,0.22),
-                      4px 4px 2px rgba(0,0,0,0.20),
-                      5px 5px 3px rgba(0,0,0,0.18),
-                      6px 6px 4px rgba(0,0,0,0.17),
-                      7px 7px 6px rgba(0,0,0,0.15),
-                      0px 20px 50px rgba(79,70,229,0.55),
-                      0px 40px 80px rgba(59,130,246,0.50)
+                      0px -2px 3px rgba(255,255,255,0.6),
+                      1px 1px 0px rgba(0,0,0,0.22),
+                      2px 2px 0px rgba(0,0,0,0.20),
+                      3px 3px 1px rgba(0,0,0,0.18),
+                      0px 12px 24px rgba(79,70,229,0.30),
+                      0px 18px 36px rgba(59,130,246,0.25)
                     `,
                   }}
                 >
@@ -274,19 +270,15 @@ function HomeComponent() {
                 </span>
                 <br />
                 <span
-                  className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent"
+                  className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent gradient-animated-text"
                   style={{
                     textShadow: `
-                      0px -2px 3px rgba(255,255,255,0.8),
-                      1px 1px 0px rgba(0,0,0,0.25),
-                      2px 2px 0px rgba(0,0,0,0.23),
-                      3px 3px 1px rgba(0,0,0,0.22),
-                      4px 4px 2px rgba(0,0,0,0.20),
-                      5px 5px 3px rgba(0,0,0,0.18),
-                      6px 6px 4px rgba(0,0,0,0.17),
-                      7px 7px 6px rgba(0,0,0,0.15),
-                      0px 20px 50px rgba(45,212,191,0.50),
-                      0px 40px 80px rgba(14,165,233,0.45)
+                      0px -2px 3px rgba(255,255,255,0.6),
+                      1px 1px 0px rgba(0,0,0,0.22),
+                      2px 2px 0px rgba(0,0,0,0.20),
+                      3px 3px 1px rgba(0,0,0,0.18),
+                      0px 12px 24px rgba(45,212,191,0.28),
+                      0px 18px 36px rgba(14,165,233,0.22)
                     `,
                   }}
                 >
@@ -404,7 +396,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -503,7 +495,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -637,7 +629,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -747,7 +739,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -851,7 +843,7 @@ function HomeComponent() {
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                     <span
-                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent"
+                      className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent gradient-animated-text"
                       style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -955,7 +947,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-violet-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-violet-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -1052,7 +1044,7 @@ function HomeComponent() {
               <div className="text-center opacity-100 mb-2 sm:mb-3 md:mb-4">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
                 <span
-                  className="bg-gradient-to-r from-indigo-300 via-blue-300 to-blue-400 bg-clip-text text-transparent"
+                  className="bg-gradient-to-r from-indigo-300 via-blue-300 to-blue-400 bg-clip-text text-transparent gradient-animated-text"
                   style={{
                     textShadow: `
                       0px -2px 3px rgba(255,255,255,0.8),
@@ -1135,7 +1127,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -1262,7 +1254,7 @@ function HomeComponent() {
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                     <span
-                    className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent"
+                      className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent gradient-animated-text"
                       style={{
                       textShadow: `
                         0px -2px 3px rgba(255,255,255,0.8),
@@ -1336,7 +1328,7 @@ function HomeComponent() {
             <div className="text-center opacity-100 mb-6 sm:mb-8 md:mb-10">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
                 <span
-                  className="bg-gradient-to-r from-indigo-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent"
+                  className="bg-gradient-to-r from-indigo-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent gradient-animated-text"
                   style={{
                     textShadow: `
                       0px -1px 2px rgba(255,255,255,0.45),
@@ -1385,7 +1377,7 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-violet-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-violet-300 bg-clip-text text-transparent gradient-animated-text"
                     style={{
                       textShadow: `
                         0px -1px 2px rgba(255,255,255,0.45),
