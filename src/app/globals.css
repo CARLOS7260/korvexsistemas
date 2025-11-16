@@ -41,6 +41,17 @@ html {
   background-size: 300% 300%;
 }
 
+/* Camada por caractere: cada letra recebe um gradiente vertical (claro→escuro) */
+.per-letter-gradient {
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.18) 45%, rgba(0,0,0,0.30) 100%),
+    linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+  background-repeat: repeat-x, no-repeat;
+  /* 1ch ≈ largura de um caractere monospace; funciona bem como aproximação visual */
+  background-size: 1ch 100%, 300% 300%;
+  background-blend-mode: overlay, normal;
+}
+
 @keyframes gradient-shift {
   0%, 100% {
     background-position: 0% 50%;
