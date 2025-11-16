@@ -29,6 +29,17 @@ html {
   animation: gradient-shift 8s ease-in-out infinite;
 }
 
+/* Camadas extras (darker/bright) mantendo o gradiente base via Tailwind vars */
+.multi-layer-gradient {
+  /* reconstrói o gradiente base com as variáveis do Tailwind e sobrepõe camadas */
+  background-image:
+    radial-gradient(120% 100% at 50% 0%, rgba(0,0,0,0.25), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.0) 40%, rgba(0,0,0,0.12) 100%),
+    linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+  background-blend-mode: soft-light, overlay, normal;
+  background-size: 200% 200%;
+}
+
 @keyframes gradient-shift {
   0%, 100% {
     background-position: 0% 50%;
