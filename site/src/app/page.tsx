@@ -245,15 +245,16 @@ export default function Home() {
                   className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -1px 2px rgba(255,255,255,0.45),
-                      1px 1px 0px rgba(0,0,0,0.18),
-                      2px 2px 1px rgba(0,0,0,0.15),
-                      3px 3px 2px rgba(0,0,0,0.12),
-                      4px 4px 3px rgba(0,0,0,0.10),
-                      5px 5px 5px rgba(0,0,0,0.10),
-                      0 30px 85px rgba(79,70,229,0.55),
-                      0 18px 48px rgba(59,130,246,0.50),
-                      0 6px 20px rgba(15,23,42,0.9)
+                      0px -2px 3px rgba(255,255,255,0.8),
+                      1px 1px 0px rgba(0,0,0,0.25),
+                      2px 2px 0px rgba(0,0,0,0.23),
+                      3px 3px 1px rgba(0,0,0,0.22),
+                      4px 4px 2px rgba(0,0,0,0.20),
+                      5px 5px 3px rgba(0,0,0,0.18),
+                      6px 6px 4px rgba(0,0,0,0.17),
+                      7px 7px 6px rgba(0,0,0,0.15),
+                      0px 20px 50px rgba(79,70,229,0.55),
+                      0px 40px 80px rgba(59,130,246,0.50)
                     `,
                   }}
                 >
@@ -264,15 +265,16 @@ export default function Home() {
                   className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -1px 2px rgba(255,255,255,0.45),
-                      1px 1px 0px rgba(0,0,0,0.18),
-                      2px 2px 1px rgba(0,0,0,0.15),
-                      3px 3px 2px rgba(0,0,0,0.12),
-                      4px 4px 3px rgba(0,0,0,0.10),
-                      5px 5px 5px rgba(0,0,0,0.10),
-                      0 28px 80px rgba(45,212,191,0.50),
-                      0 16px 44px rgba(14,165,233,0.45),
-                      0 6px 18px rgba(15,23,42,0.85)
+                      0px -2px 3px rgba(255,255,255,0.8),
+                      1px 1px 0px rgba(0,0,0,0.25),
+                      2px 2px 0px rgba(0,0,0,0.23),
+                      3px 3px 1px rgba(0,0,0,0.22),
+                      4px 4px 2px rgba(0,0,0,0.20),
+                      5px 5px 3px rgba(0,0,0,0.18),
+                      6px 6px 4px rgba(0,0,0,0.17),
+                      7px 7px 6px rgba(0,0,0,0.15),
+                      0px 20px 50px rgba(45,212,191,0.50),
+                      0px 40px 80px rgba(14,165,233,0.45)
                     `,
                   }}
                 >

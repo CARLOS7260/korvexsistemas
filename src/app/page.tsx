@@ -257,15 +257,16 @@ function HomeComponent() {
                   className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -1px 2px rgba(255,255,255,0.45),
-                      1px 1px 0px rgba(0,0,0,0.18),
-                      2px 2px 1px rgba(0,0,0,0.15),
-                      3px 3px 2px rgba(0,0,0,0.12),
-                      4px 4px 3px rgba(0,0,0,0.10),
-                      5px 5px 5px rgba(0,0,0,0.10),
-                      0 30px 85px rgba(79,70,229,0.55),
-                      0 18px 48px rgba(59,130,246,0.50),
-                      0 6px 20px rgba(15,23,42,0.9)
+                      0px -2px 3px rgba(255,255,255,0.8),
+                      1px 1px 0px rgba(0,0,0,0.25),
+                      2px 2px 0px rgba(0,0,0,0.23),
+                      3px 3px 1px rgba(0,0,0,0.22),
+                      4px 4px 2px rgba(0,0,0,0.20),
+                      5px 5px 3px rgba(0,0,0,0.18),
+                      6px 6px 4px rgba(0,0,0,0.17),
+                      7px 7px 6px rgba(0,0,0,0.15),
+                      0px 20px 50px rgba(79,70,229,0.55),
+                      0px 40px 80px rgba(59,130,246,0.50)
                     `,
                   }}
                 >
@@ -276,15 +277,16 @@ function HomeComponent() {
                   className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -1px 2px rgba(255,255,255,0.45),
-                      1px 1px 0px rgba(0,0,0,0.18),
-                      2px 2px 1px rgba(0,0,0,0.15),
-                      3px 3px 2px rgba(0,0,0,0.12),
-                      4px 4px 3px rgba(0,0,0,0.10),
-                      5px 5px 5px rgba(0,0,0,0.10),
-                      0 28px 80px rgba(45,212,191,0.50),
-                      0 16px 44px rgba(14,165,233,0.45),
-                      0 6px 18px rgba(15,23,42,0.85)
+                      0px -2px 3px rgba(255,255,255,0.8),
+                      1px 1px 0px rgba(0,0,0,0.25),
+                      2px 2px 0px rgba(0,0,0,0.23),
+                      3px 3px 1px rgba(0,0,0,0.22),
+                      4px 4px 2px rgba(0,0,0,0.20),
+                      5px 5px 3px rgba(0,0,0,0.18),
+                      6px 6px 4px rgba(0,0,0,0.17),
+                      7px 7px 6px rgba(0,0,0,0.15),
+                      0px 20px 50px rgba(45,212,191,0.50),
+                      0px 40px 80px rgba(14,165,233,0.45)
                     `,
                   }}
                 >
@@ -405,15 +407,16 @@ function HomeComponent() {
                     className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 26px 72px rgba(99,102,241,0.55),
-                        0 16px 42px rgba(59,130,246,0.50),
-                        0 6px 18px rgba(15,23,42,0.85)
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(99,102,241,0.50),
+                        0px 40px 80px rgba(59,130,246,0.45)
                       `,
                     }}
                   >
@@ -503,15 +506,16 @@ function HomeComponent() {
                     className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 25px 70px rgba(99,102,241,0.55),
-                        0 16px 40px rgba(59,130,246,0.50),
-                        0 6px 18px rgba(15,23,42,0.85)
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(99,102,241,0.50),
+                        0px 40px 80px rgba(59,130,246,0.45)
                       `,
                     }}
                   >
@@ -636,15 +640,16 @@ function HomeComponent() {
                     className="bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 28px 70px rgba(45,212,191,0.45),
-                        0 14px 36px rgba(14,165,233,0.40),
-                        0 6px 18px rgba(15,23,42,0.85)
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(45,212,191,0.50),
+                        0px 40px 80px rgba(14,165,233,0.45)
                       `,
                     }}
                   >
@@ -745,15 +750,16 @@ function HomeComponent() {
                     className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 28px 70px rgba(217,70,239,0.45),
-                        0 14px 36px rgba(244,114,182,0.40),
-                        0 6px 18px rgba(15,23,42,0.85)
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(217,70,239,0.50),
+                        0px 40px 80px rgba(244,114,182,0.45)
                       `,
                     }}
                   >
@@ -845,18 +851,19 @@ function HomeComponent() {
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                     <span
-                      className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent"
                       style={{
-                        textShadow: `
-                          0px -1px 2px rgba(255,255,255,0.45),
-                          1px 1px 0px rgba(0,0,0,0.18),
-                          2px 2px 1px rgba(0,0,0,0.15),
-                          3px 3px 2px rgba(0,0,0,0.12),
-                          4px 4px 3px rgba(0,0,0,0.10),
-                          5px 5px 5px rgba(0,0,0,0.10),
-                          0 28px 70px rgba(99,102,241,0.45),
-                          0 14px 36px rgba(59,130,246,0.40),
-                          0 6px 18px rgba(15,23,42,0.85)
+                      textShadow: `
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(99,102,241,0.50),
+                        0px 40px 80px rgba(59,130,246,0.45)
                         `,
                       }}
                     >
@@ -951,15 +958,16 @@ function HomeComponent() {
                     className="bg-gradient-to-r from-violet-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 28px 70px rgba(192,132,252,0.45),
-                        0 14px 36px rgba(217,70,239,0.40),
-                        0 6px 18px rgba(15,23,42,0.85)
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(167,139,250,0.50),
+                        0px 40px 80px rgba(217,70,239,0.45)
                       `,
                     }}
                   >
@@ -1047,15 +1055,16 @@ function HomeComponent() {
                   className="bg-gradient-to-r from-indigo-300 via-blue-300 to-blue-400 bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -1px 2px rgba(255,255,255,0.45),
-                      1px 1px 0px rgba(0,0,0,0.18),
-                      2px 2px 1px rgba(0,0,0,0.15),
-                      3px 3px 2px rgba(0,0,0,0.12),
-                      4px 4px 3px rgba(0,0,0,0.10),
-                      5px 5px 5px rgba(0,0,0,0.10),
-                      0 26px 70px rgba(59,130,246,0.50),
-                      0 14px 36px rgba(29,78,216,0.40),
-                      0 6px 18px rgba(15,23,42,0.85)
+                      0px -2px 3px rgba(255,255,255,0.8),
+                      1px 1px 0px rgba(0,0,0,0.25),
+                      2px 2px 0px rgba(0,0,0,0.23),
+                      3px 3px 1px rgba(0,0,0,0.22),
+                      4px 4px 2px rgba(0,0,0,0.20),
+                      5px 5px 3px rgba(0,0,0,0.18),
+                      6px 6px 4px rgba(0,0,0,0.17),
+                      7px 7px 6px rgba(0,0,0,0.15),
+                      0px 20px 50px rgba(59,130,246,0.50),
+                      0px 40px 80px rgba(29,78,216,0.45)
                     `,
                   }}
                 >
@@ -1129,15 +1138,16 @@ function HomeComponent() {
                     className="bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 28px 70px rgba(45,212,191,0.45),
-                        0 16px 42px rgba(14,165,233,0.40),
-                        0 6px 18px rgba(15,23,42,0.85)
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(45,212,191,0.50),
+                        0px 40px 80px rgba(14,165,233,0.45)
                       `,
                     }}
                   >
@@ -1252,18 +1262,19 @@ function HomeComponent() {
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                     <span
-                      className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent"
+                    className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent"
                       style={{
-                        textShadow: `
-                          0px -1px 2px rgba(255,255,255,0.45),
-                          1px 1px 0px rgba(0,0,0,0.18),
-                          2px 2px 1px rgba(0,0,0,0.15),
-                          3px 3px 2px rgba(0,0,0,0.12),
-                          4px 4px 3px rgba(0,0,0,0.10),
-                          5px 5px 5px rgba(0,0,0,0.10),
-                          0 26px 70px rgba(99,102,241,0.50),
-                          0 14px 36px rgba(59,130,246,0.40),
-                          0 6px 18px rgba(15,23,42,0.85)
+                      textShadow: `
+                        0px -2px 3px rgba(255,255,255,0.8),
+                        1px 1px 0px rgba(0,0,0,0.25),
+                        2px 2px 0px rgba(0,0,0,0.23),
+                        3px 3px 1px rgba(0,0,0,0.22),
+                        4px 4px 2px rgba(0,0,0,0.20),
+                        5px 5px 3px rgba(0,0,0,0.18),
+                        6px 6px 4px rgba(0,0,0,0.17),
+                        7px 7px 6px rgba(0,0,0,0.15),
+                        0px 20px 50px rgba(99,102,241,0.50),
+                        0px 40px 80px rgba(59,130,246,0.45)
                         `,
                       }}
                     >
