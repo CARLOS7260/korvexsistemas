@@ -204,6 +204,13 @@ function HomeComponent() {
             <Link
               href="#contato"
               className="inline-flex items-center gap-2 font-semibold text-white transition-all duration-300 hover:scale-105 hover:text-blue-400"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('contato');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
             >
               Fale com um especialista
               <ChevronRight size={16} />
@@ -303,6 +310,13 @@ function HomeComponent() {
                 <Link
                   href="#contato"
                   className="group relative rounded-full bg-[#3b82f6] px-10 py-4 text-center font-bold text-white shadow-lg shadow-blue-900/50 transition-all duration-300 hover:scale-103 hover:bg-[#2563eb] hover:shadow-xl hover:shadow-blue-900/60"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById('contato');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                 >
                   <span className="relative z-10 flex items-center gap-2">
                   Solicitar Proposta Personalizada
@@ -718,6 +732,13 @@ function HomeComponent() {
                 <Link
                   href="#contato"
                   className="inline-flex items-center gap-2 rounded-full bg-cyan-500/20 border border-cyan-500/30 px-8 py-4 text-base font-bold text-cyan-400 transition-all duration-300 hover:scale-105 hover:bg-cyan-500/30"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById('contato');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                 >
                   Quer saber mais sobre nossa stack?
                   <ArrowRight size={18} />
@@ -925,6 +946,13 @@ function HomeComponent() {
                   <Link
                     href="#contato"
                     className="inline-flex items-center gap-3 rounded-full bg-purple-500 px-10 py-4 text-base font-bold text-white shadow-lg shadow-purple-900/50 transition-all duration-300 hover:scale-105 hover:bg-purple-600 hover:shadow-xl"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('contato');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
                   >
                     Quero uma solução personalizada
                     <ArrowRight size={20} />
@@ -1185,6 +1213,13 @@ function HomeComponent() {
                   <Link
                     href="#contato"
                     className="group inline-flex items-center gap-3 rounded-full border-2 border-blue-500/40 bg-blue-500/10 px-8 py-4 text-base font-bold text-blue-400 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:bg-blue-500/20"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('contato');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
                   >
                     Agendar onboarding
                     <ChevronRight size={20} />
@@ -1414,6 +1449,13 @@ function HomeComponent() {
                   <Link
                     href="#contato"
                     className="group inline-flex items-center justify-center gap-3 rounded-full border-2 border-white/40 bg-white/5 px-10 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white/60 hover:bg-white/10 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById('contato');
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }
+                    }}
                   >
                     Solicitar Proposta Personalizada
                     <ArrowRight size={20} />
@@ -1558,7 +1600,17 @@ function HomeComponent() {
             <Link href="/termos-de-uso" className="transition hover:text-white">
               Termos de Uso
             </Link>
-            <Link href="#contato" className="transition hover:text-white">
+            <Link 
+              href="#contato" 
+              className="transition hover:text-white"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('contato');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+            >
               Contato
             </Link>
           </div>
