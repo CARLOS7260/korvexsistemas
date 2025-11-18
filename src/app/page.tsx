@@ -261,32 +261,31 @@ function HomeComponent() {
                 style={{ fontWeight: 800 }}
               >
                 <span
-                  className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                  className="bg-gradient-to-r from-[#C7F9FF] via-[#8AE8FF] to-[#4FCBFF] bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -2px 3px rgba(255,255,255,0.6),
-                      1px 1px 0px rgba(0,0,0,0.22),
-                      2px 2px 0px rgba(0,0,0,0.20),
-                      3px 3px 1px rgba(0,0,0,0.18),
-                      0px 12px 24px rgba(79,70,229,0.30),
-                      0px 18px 36px rgba(59,130,246,0.25)
-                    `,
+                      0 2px 4px rgba(0, 0, 0, 0.35),
+                      0 6px 12px rgba(0, 0, 0, 0.45),
+                      0 12px 28px rgba(0, 0, 0, 0.55),
+                      0 0 12px rgba(79, 203, 255, 0.55),
+                      0 0 24px rgba(138, 232, 255, 0.55),
+                      0 0 36px rgba(199, 249, 255, 0.65)
+                    `
                   }}
                 >
                   Software sob medida
                 </span>
                 <br />
                 <span
-                  className="bg-gradient-to-r from-cyan-300 via-emerald-300 to-sky-400 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                  className="bg-gradient-to-r from-[#E6FAFF] via-[#A8EEFF] to-[#7ADFFF] bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -2px 3px rgba(255,255,255,0.6),
-                      1px 1px 0px rgba(0,0,0,0.22),
-                      2px 2px 0px rgba(0,0,0,0.20),
-                      3px 3px 1px rgba(0,0,0,0.18),
-                      0px 12px 24px rgba(45,212,191,0.28),
-                      0px 18px 36px rgba(14,165,233,0.22)
-                    `,
+                      0 1px 2px rgba(0, 0, 0, 0.30),
+                      0 3px 6px rgba(0, 0, 0, 0.35),
+                      0 8px 20px rgba(0, 0, 0, 0.45),
+                      0 0 10px rgba(122, 223, 255, 0.45),
+                      0 0 22px rgba(168, 238, 255, 0.55)
+                    `
                   }}
                 >
                   que transforma sua empresa em líder digital
