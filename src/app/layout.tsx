@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://korvexsistemas.com.br";
+const siteUrl = "https://www.korvexsistemas.com.br";
 const siteName = "Korvex Sistemas";
 const siteDescription =
   "Soluções modernas em software, automação comercial e sistemas personalizados.";
@@ -43,14 +43,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Korvex Sistemas – Software sob medida e automação comercial",
     description: "Soluções modernas em software, automação comercial e sistemas personalizados.",
-    url: "https://korvexsistemas.com.br",
+    url: siteUrl,
     siteName: "Korvex Sistemas",
     images: [
       {
-        url: "https://korvexsistemas.com.br/korvex-3d-06.png",
+        url: "https://www.korvexsistemas.com.br/korvex-3d-06.png",
         width: 1200,
         height: 630,
         alt: `${siteName} - Plataforma completa de software sob medida`,
+        type: "image/png",
       },
     ],
     locale: "pt_BR",
@@ -60,7 +61,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Korvex Sistemas – Software sob medida e automação comercial",
     description: "Soluções modernas em software, automação comercial e sistemas personalizados.",
-    images: ["https://korvexsistemas.com.br/korvex-3d-06.png"],
+    images: [
+      {
+        url: "https://www.korvexsistemas.com.br/korvex-3d-06.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   robots: {
     index: true,
