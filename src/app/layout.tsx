@@ -15,17 +15,14 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://korvex.com.br";
+const siteUrl = "https://korvexsistemas.com.br";
 const siteName = "Korvex Sistemas";
 const siteDescription =
-  "Software sob medida, automação comercial, PDV omnichannel, integrações e aplicativos para varejo e indústria. Planejamos, desenvolvemos e operamos soluções digitais completas para acelerar resultados.";
+  "Soluções modernas em software, automação comercial e sistemas personalizados.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: {
-    default: `${siteName} | Software sob medida, PDV e automação comercial`,
-    template: `%s | ${siteName}`,
-  },
+  title: "Korvex Sistemas – Software sob medida e automação comercial",
   description: siteDescription,
   keywords: [
     "software sob medida",
@@ -44,26 +41,26 @@ export const metadata: Metadata = {
   creator: siteName,
   publisher: siteName,
   openGraph: {
-    title: `${siteName} | Software sob medida, PDV e automação comercial`,
-    description: siteDescription,
-    url: siteUrl,
-    siteName,
-    locale: "pt_BR",
-    type: "website",
+    title: "Korvex Sistemas – Software sob medida e automação comercial",
+    description: "Soluções modernas em software, automação comercial e sistemas personalizados.",
+    url: "https://korvexsistemas.com.br",
+    siteName: "Korvex Sistemas",
     images: [
       {
-        url: `${siteUrl}/korvex-3d-06.png`,
+        url: "https://korvexsistemas.com.br/korvex-3d-06.png",
         width: 1200,
         height: 630,
         alt: `${siteName} - Plataforma completa de software sob medida`,
       },
     ],
+    locale: "pt_BR",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteName} | Software sob medida e automação`,
-    description: siteDescription,
-    images: [`${siteUrl}/korvex-3d-06.png`],
+    title: "Korvex Sistemas – Software sob medida e automação comercial",
+    description: "Soluções modernas em software, automação comercial e sistemas personalizados.",
+    images: ["https://korvexsistemas.com.br/korvex-3d-06.png"],
   },
   robots: {
     index: true,

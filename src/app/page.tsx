@@ -189,10 +189,12 @@ function HomeComponent() {
           >
             <div className="flex items-center gap-3">
               <motion.div
-                initial={{ rotate: 0 }}
-                whileInView={{ rotate: 180 }}
-                viewport={{ once: true }}
-                transition={{ duration: 6, ease: "linear" }}
+                animate={{ rotate: 360 }}
+                transition={{ 
+                  duration: 8, 
+                  ease: "linear",
+                  repeat: Infinity
+                }}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-500/20 text-blue-400 glow-blue"
               >
                 <Sparkles size={20} />
