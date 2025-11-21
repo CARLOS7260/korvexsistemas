@@ -409,20 +409,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-indigo-300 via-blue-300 to-violet-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#A5B4FC] via-[#818CF8] to-[#6366F1] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(99,102,241,0.50),
-                        0px 40px 80px rgba(59,130,246,0.45)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(99, 102, 241, 0.55),
+                        0 0 24px rgba(129, 140, 248, 0.55),
+                        0 0 36px rgba(165, 180, 252, 0.65)
+                      `
                     }}
                   >
                     Desenvolvemos qualquer sistema que sua empresa precise
@@ -508,20 +504,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#C084FC] via-[#A855F7] to-[#9333EA] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(99,102,241,0.50),
-                        0px 40px 80px rgba(59,130,246,0.45)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(147, 51, 234, 0.55),
+                        0 0 24px rgba(168, 85, 247, 0.55),
+                        0 0 36px rgba(192, 132, 252, 0.65)
+                      `
                     }}
                   >
                     Sistemas personalizados que resolvem problemas reais
@@ -642,20 +634,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#6EE7B7] via-[#34D399] to-[#10B981] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(45,212,191,0.50),
-                        0px 40px 80px rgba(14,165,233,0.45)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(16, 185, 129, 0.55),
+                        0 0 24px rgba(52, 211, 153, 0.55),
+                        0 0 36px rgba(110, 231, 183, 0.65)
+                      `
                     }}
                   >
                     Tecnologias modernas que garantem performance e escalabilidade
@@ -759,20 +747,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-pink-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#F0ABFC] via-[#E879F9] to-[#D946EF] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(217,70,239,0.50),
-                        0px 40px 80px rgba(244,114,182,0.45)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(217, 70, 239, 0.55),
+                        0 0 24px rgba(232, 121, 249, 0.55),
+                        0 0 36px rgba(240, 171, 252, 0.65)
+                      `
                     }}
                   >
                     Por que escolher a Korvex para seu projeto?
@@ -863,20 +847,16 @@ function HomeComponent() {
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                     <span
-                      className="bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                      className="bg-gradient-to-r from-[#93C5FD] via-[#60A5FA] to-[#3B82F6] bg-clip-text text-transparent"
                       style={{
-                      textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(99,102,241,0.50),
-                        0px 40px 80px rgba(59,130,246,0.45)
-                        `,
+                        textShadow: `
+                          0 2px 4px rgba(0, 0, 0, 0.35),
+                          0 6px 12px rgba(0, 0, 0, 0.45),
+                          0 12px 28px rgba(0, 0, 0, 0.55),
+                          0 0 12px rgba(59, 130, 246, 0.55),
+                          0 0 24px rgba(96, 165, 250, 0.55),
+                          0 0 36px rgba(147, 197, 253, 0.65)
+                        `
                       }}
                     >
                       Sistemas sob medida que se adaptam ao seu negócio
@@ -974,20 +954,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-violet-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#C4B5FD] via-[#A78BFA] to-[#8B5CF6] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(167,139,250,0.50),
-                        0px 40px 80px rgba(217,70,239,0.45)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(139, 92, 246, 0.55),
+                        0 0 24px rgba(167, 139, 250, 0.55),
+                        0 0 36px rgba(196, 181, 253, 0.65)
+                      `
                     }}
                   >
                     O que torna a Korvex única no mercado
@@ -1071,20 +1047,16 @@ function HomeComponent() {
               <div className="text-center opacity-100 mb-2 sm:mb-3 md:mb-4">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
                 <span
-                  className="bg-gradient-to-r from-indigo-300 via-blue-300 to-blue-400 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                  className="bg-gradient-to-r from-[#A5B4FC] via-[#818CF8] to-[#6366F1] bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -2px 3px rgba(255,255,255,0.8),
-                      1px 1px 0px rgba(0,0,0,0.25),
-                      2px 2px 0px rgba(0,0,0,0.23),
-                      3px 3px 1px rgba(0,0,0,0.22),
-                      4px 4px 2px rgba(0,0,0,0.20),
-                      5px 5px 3px rgba(0,0,0,0.18),
-                      6px 6px 4px rgba(0,0,0,0.17),
-                      7px 7px 6px rgba(0,0,0,0.15),
-                      0px 20px 50px rgba(59,130,246,0.50),
-                      0px 40px 80px rgba(29,78,216,0.45)
-                    `,
+                      0 2px 4px rgba(0, 0, 0, 0.35),
+                      0 6px 12px rgba(0, 0, 0, 0.45),
+                      0 12px 28px rgba(0, 0, 0, 0.55),
+                      0 0 12px rgba(99, 102, 241, 0.55),
+                      0 0 24px rgba(129, 140, 248, 0.55),
+                      0 0 36px rgba(165, 180, 252, 0.65)
+                    `
                   }}
                 >
                   Exemplos de Sistemas Desenvolvidos
@@ -1154,20 +1126,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-blue-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#67E8F9] via-[#22D3EE] to-[#06B6D4] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(45,212,191,0.50),
-                        0px 40px 80px rgba(14,165,233,0.45)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(6, 182, 212, 0.55),
+                        0 0 24px rgba(34, 211, 238, 0.55),
+                        0 0 36px rgba(103, 232, 249, 0.65)
+                      `
                     }}
                   >
                     Do conceito à operação: metodologia que acelera resultados
@@ -1288,20 +1256,16 @@ function HomeComponent() {
                   </span>
                   <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl" style={{ fontWeight: 800 }}>
                     <span
-                      className="bg-gradient-to-r from-purple-300 via-indigo-300 to-blue-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                      className="bg-gradient-to-r from-[#C084FC] via-[#A855F7] to-[#9333EA] bg-clip-text text-transparent"
                       style={{
-                      textShadow: `
-                        0px -2px 3px rgba(255,255,255,0.8),
-                        1px 1px 0px rgba(0,0,0,0.25),
-                        2px 2px 0px rgba(0,0,0,0.23),
-                        3px 3px 1px rgba(0,0,0,0.22),
-                        4px 4px 2px rgba(0,0,0,0.20),
-                        5px 5px 3px rgba(0,0,0,0.18),
-                        6px 6px 4px rgba(0,0,0,0.17),
-                        7px 7px 6px rgba(0,0,0,0.15),
-                        0px 20px 50px rgba(99,102,241,0.50),
-                        0px 40px 80px rgba(59,130,246,0.45)
-                        `,
+                        textShadow: `
+                          0 2px 4px rgba(0, 0, 0, 0.35),
+                          0 6px 12px rgba(0, 0, 0, 0.45),
+                          0 12px 28px rgba(0, 0, 0, 0.55),
+                          0 0 12px rgba(147, 51, 234, 0.55),
+                          0 0 24px rgba(168, 85, 247, 0.55),
+                          0 0 36px rgba(192, 132, 252, 0.65)
+                        `
                       }}
                     >
                       Resultados comprovados que geram confiança
@@ -1362,19 +1326,16 @@ function HomeComponent() {
             <div className="text-center opacity-100 mb-6 sm:mb-8 md:mb-10">
               <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style={{ fontWeight: 800 }}>
                 <span
-                  className="bg-gradient-to-r from-indigo-300 via-purple-300 to-fuchsia-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                  className="bg-gradient-to-r from-[#F0ABFC] via-[#E879F9] to-[#D946EF] bg-clip-text text-transparent"
                   style={{
                     textShadow: `
-                      0px -1px 2px rgba(255,255,255,0.45),
-                      1px 1px 0px rgba(0,0,0,0.18),
-                      2px 2px 1px rgba(0,0,0,0.15),
-                      3px 3px 2px rgba(0,0,0,0.12),
-                      4px 4px 3px rgba(0,0,0,0.10),
-                      5px 5px 5px rgba(0,0,0,0.10),
-                      0 28px 70px rgba(167,139,250,0.45),
-                      0 16px 42px rgba(217,70,239,0.40),
-                      0 6px 18px rgba(15,23,42,0.85)
-                    `,
+                      0 2px 4px rgba(0, 0, 0, 0.35),
+                      0 6px 12px rgba(0, 0, 0, 0.45),
+                      0 12px 28px rgba(0, 0, 0, 0.55),
+                      0 0 12px rgba(217, 70, 239, 0.55),
+                      0 0 24px rgba(232, 121, 249, 0.55),
+                      0 0 36px rgba(240, 171, 252, 0.65)
+                    `
                   }}
                 >
                   Interfaces reais que inspiram sua equipe
@@ -1411,19 +1372,16 @@ function HomeComponent() {
                 </span>
                 <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl" style={{ fontWeight: 800 }}>
                   <span
-                    className="bg-gradient-to-r from-blue-300 via-indigo-300 to-violet-300 bg-clip-text text-transparent gradient-animated-text multi-layer-gradient per-letter-gradient"
+                    className="bg-gradient-to-r from-[#93C5FD] via-[#818CF8] to-[#6366F1] bg-clip-text text-transparent"
                     style={{
                       textShadow: `
-                        0px -1px 2px rgba(255,255,255,0.45),
-                        1px 1px 0px rgba(0,0,0,0.18),
-                        2px 2px 1px rgba(0,0,0,0.15),
-                        3px 3px 2px rgba(0,0,0,0.12),
-                        4px 4px 3px rgba(0,0,0,0.10),
-                        5px 5px 5px rgba(0,0,0,0.10),
-                        0 26px 72px rgba(99,102,241,0.50),
-                        0 16px 42px rgba(59,130,246,0.45),
-                        0 6px 18px rgba(15,23,42,0.85)
-                      `,
+                        0 2px 4px rgba(0, 0, 0, 0.35),
+                        0 6px 12px rgba(0, 0, 0, 0.45),
+                        0 12px 28px rgba(0, 0, 0, 0.55),
+                        0 0 12px rgba(99, 102, 241, 0.55),
+                        0 0 24px rgba(129, 140, 248, 0.55),
+                        0 0 36px rgba(147, 197, 253, 0.65)
+                      `
                     }}
                   >
                     Pronto para transformar sua empresa?
