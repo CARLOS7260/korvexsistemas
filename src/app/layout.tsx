@@ -79,6 +79,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: "/favicon.ico",
+    apple: [
+      { url: "/korvex-3d-06.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
