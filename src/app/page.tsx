@@ -3,7 +3,7 @@
 import { motion, type TargetAndTransition } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { memo } from "react";
+import { memo, useState } from "react";
 import { Carousel } from "../components/Carousel";
 import { ScrollReveal } from "../components/ScrollReveal";
 import {
@@ -154,6 +154,46 @@ const carouselItems = [
 ];
 
 function HomeComponent() {
+  const [formStatus, setFormStatus] = useState<{ type: 'idle' | 'success' | 'error', message: string }>({ type: 'idle', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const formatPhoneNumber = (phone: string): string => {
+    // Remove tudo que não é número
+    const numbers = phone.replace(/\D/g, '');
+    
+    // Se começar com 0, remove
+    const cleanPhone = numbers.startsWith('0') ? numbers.slice(1) : numbers;
+    
+    // Se não começar com 55, adiciona
+    if (!cleanPhone.startsWith('55')) {
+      return `55${cleanPhone}`;
+    }
+    
+    return cleanPhone;
+  };
+
+  const validateForm = (nome: string, email: string, whatsapp: string, mensagem: string): string | null => {
+    if (!nome || nome.trim().length < 3) {
+      return 'Por favor, informe seu nome completo (mínimo 3 caracteres)';
+    }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      return 'Por favor, informe um e-mail válido';
+    }
+    
+    const phoneNumbers = whatsapp.replace(/\D/g, '');
+    if (!whatsapp || phoneNumbers.length < 10) {
+      return 'Por favor, informe um WhatsApp válido (com DDD)';
+    }
+    
+    if (!mensagem || mensagem.trim().length < 10) {
+      return 'Por favor, descreva sua necessidade (mínimo 10 caracteres)';
+    }
+    
+    return null;
+  };
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#0f172a] text-[#f3f4f6]">
       <header className="relative isolate min-h-screen overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a]">
@@ -1364,7 +1404,7 @@ function HomeComponent() {
         </section>
 
         {/* Seção CTA final */}
-        <section className="relative">
+        <section id="formulario-contato" className="relative">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(15,23,42,0.8),transparent_65%)]" />
           <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-[2rem] border border-white/20 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] px-6 py-16 text-white sm:rounded-[2.5rem] sm:px-8 sm:py-20 md:rounded-[3rem] md:px-12 md:py-24 shadow-[0_40px_100px_-40px_rgba(0,0,0,0.9)]">
             <div className="grid gap-12 sm:gap-14 md:gap-16 lg:grid-cols-2 lg:items-center">
@@ -1446,25 +1486,96 @@ function HomeComponent() {
                 </p>
                 <form 
                   className="mt-8 space-y-5 text-base"
-                  onSubmit={(e) => {
+                  onSubmit={async (e) => {
                     e.preventDefault();
+                    setIsSubmitting(true);
+                    setFormStatus({ type: 'idle', message: '' });
+
                     const formData = new FormData(e.currentTarget);
-                    const nome = formData.get("nome") as string;
-                    const email = formData.get("email") as string;
-                    const whatsapp = formData.get("whatsapp") as string;
-                    const mensagem = formData.get("mensagem") as string;
+                    const nome = (formData.get("nome") as string) || '';
+                    const email = (formData.get("email") as string) || '';
+                    const whatsapp = (formData.get("whatsapp") as string) || '';
+                    const mensagem = (formData.get("mensagem") as string) || '';
                     
-                    // Formata mensagem para WhatsApp
-                    const texto = `Olá! Gostaria de receber uma proposta personalizada.\n\n*Nome:* ${nome}\n*E-mail:* ${email}\n*WhatsApp:* ${whatsapp}\n\n*Mensagem:*\n${mensagem}`;
-                    const url = `https://wa.me/5551980339085?text=${encodeURIComponent(texto)}`;
+                    // Validação
+                    const validationError = validateForm(nome, email, whatsapp, mensagem);
+                    if (validationError) {
+                      setFormStatus({ type: 'error', message: validationError });
+                      setIsSubmitting(false);
+                      return;
+                    }
                     
-                    // Abre WhatsApp
-                    window.open(url, "_blank");
-                    
-                    // Limpa formulário
-                    e.currentTarget.reset();
+                    try {
+                      // Envia e-mail via API
+                      const emailResponse = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                          'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                          nome,
+                          email,
+                          whatsapp,
+                          mensagem,
+                        }),
+                      });
+
+                      const emailData = await emailResponse.json();
+
+                      if (!emailResponse.ok) {
+                        throw new Error(emailData.error || 'Erro ao enviar e-mail');
+                      }
+
+                      // Formata telefone para WhatsApp
+                      const formattedPhone = formatPhoneNumber(whatsapp);
+                      
+                      // Formata mensagem para WhatsApp
+                      const texto = `Olá! Gostaria de receber uma proposta personalizada.\n\n*Nome:* ${nome}\n*E-mail:* ${email}\n*WhatsApp:* ${whatsapp}\n\n*Mensagem:*\n${mensagem}`;
+                      const url = `https://wa.me/5551980339085?text=${encodeURIComponent(texto)}`;
+                      
+                      // Abre WhatsApp
+                      window.open(url, "_blank");
+                      
+                      // Mostra mensagem de sucesso
+                      setFormStatus({ 
+                        type: 'success', 
+                        message: 'Formulário enviado com sucesso! Recebemos sua solicitação por e-mail e o WhatsApp será aberto em instantes.' 
+                      });
+                      
+                      // Limpa formulário após 3 segundos
+                      setTimeout(() => {
+                        e.currentTarget.reset();
+                        setFormStatus({ type: 'idle', message: '' });
+                      }, 5000);
+                      
+                    } catch (error) {
+                      console.error('Erro ao enviar formulário:', error);
+                      setFormStatus({ 
+                        type: 'error', 
+                        message: error instanceof Error ? error.message : 'Erro ao processar formulário. Tente novamente ou entre em contato diretamente.' 
+                      });
+                    } finally {
+                      setIsSubmitting(false);
+                    }
                   }}
                 >
+                  {formStatus.type === 'success' && (
+                    <div className="rounded-2xl bg-emerald-500/20 border border-emerald-500/30 px-5 py-4 text-emerald-300 text-sm">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 size={20} />
+                        <span>{formStatus.message}</span>
+                      </div>
+                    </div>
+                  )}
+                  
+                  {formStatus.type === 'error' && (
+                    <div className="rounded-2xl bg-red-500/20 border border-red-500/30 px-5 py-4 text-red-300 text-sm">
+                      <div className="flex items-center gap-2">
+                        <span>⚠️</span>
+                        <span>{formStatus.message}</span>
+                      </div>
+                    </div>
+                  )}
                   <input
                     type="text"
                     name="nome"
@@ -1482,8 +1593,10 @@ function HomeComponent() {
                   <input
                     type="tel"
                     name="whatsapp"
-                    placeholder="WhatsApp"
+                    placeholder="WhatsApp (com DDD, ex: 51 98033-9085)"
                     required
+                    pattern="[0-9\s\-\(\)]+"
+                    minLength={10}
                     className="w-full rounded-2xl border border-white/20 bg-white/10 px-5 py-4 text-white placeholder:text-white/50 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400/40 transition-all"
                   />
                   <textarea
@@ -1495,11 +1608,25 @@ function HomeComponent() {
                   />
                   <button
                     type="submit"
-                    className="group relative w-full rounded-full bg-[#3b82f6] px-8 py-4 text-base font-bold text-white shadow-lg shadow-blue-900/50 transition-all duration-300 hover:scale-105 hover:bg-[#2563eb] hover:shadow-xl hover:shadow-blue-900/60"
+                    disabled={isSubmitting}
+                    className="group relative w-full rounded-full bg-[#3b82f6] px-8 py-4 text-base font-bold text-white shadow-lg shadow-blue-900/50 transition-all duration-300 hover:scale-105 hover:bg-[#2563eb] hover:shadow-xl hover:shadow-blue-900/60 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                   >
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      Receber Proposta Personalizada
-                      <ArrowRight size={18} />
+                      {isSubmitting ? (
+                        <>
+                          <motion.div
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                            className="h-5 w-5 border-2 border-white border-t-transparent rounded-full"
+                          />
+                          Enviando...
+                        </>
+                      ) : (
+                        <>
+                          Receber Proposta Personalizada
+                          <ArrowRight size={18} />
+                        </>
+                      )}
                     </span>
                     <div className="absolute inset-0 rounded-full bg-blue-400 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-50" />
                   </button>
@@ -1518,6 +1645,12 @@ function HomeComponent() {
             <p className="max-w-sm text-base leading-relaxed text-[#94a3b8]">
               Desenvolvimento de software sob medida para empresas. Soluções personalizadas com suporte humano e tecnologia de ponta.
             </p>
+            <div className="flex items-center gap-2 text-sm text-[#94a3b8]">
+              <MessageCircle size={18} />
+              <a href="mailto:contato@korvexsistemas.com.br" className="transition hover:text-white hover:underline">
+                contato@korvexsistemas.com.br
+              </a>
+            </div>
             <div className="flex items-center gap-4">
               <motion.a
                 href="https://www.linkedin.com"
@@ -1560,13 +1693,13 @@ function HomeComponent() {
               Termos de Uso
             </Link>
             <Link 
-              href="#contato" 
+              href="#formulario-contato" 
               className="transition hover:text-white"
               onClick={(e) => {
                 e.preventDefault();
-                const element = document.getElementById('contato');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const formSection = document.getElementById('formulario-contato');
+                if (formSection) {
+                  formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
               }}
             >
