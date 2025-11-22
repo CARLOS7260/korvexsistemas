@@ -1484,8 +1484,30 @@ function HomeComponent() {
                   <strong className="text-white">Preencha o formulário abaixo ou fale diretamente no WhatsApp.</strong> 
                   Nossa equipe de especialistas responde em até 30 minutos com uma proposta sob medida para seu projeto.
                 </p>
+                
+                {/* Mensagem de sucesso - aparece quando formulário é enviado */}
+                {formStatus.type === 'success' && (
+                  <div className="mt-8 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 px-8 py-6 text-emerald-300">
+                    <div className="flex items-center gap-3">
+                      <CheckCircle2 size={24} className="flex-shrink-0" />
+                      <p className="text-base font-medium">{formStatus.message}</p>
+                    </div>
+                  </div>
+                )}
+                
+                {/* Mensagem de erro */}
+                {formStatus.type === 'error' && (
+                  <div className="mt-8 rounded-2xl bg-red-500/20 border border-red-500/30 px-8 py-6 text-red-300">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl">⚠️</span>
+                      <p className="text-base font-medium">{formStatus.message}</p>
+                    </div>
+                  </div>
+                )}
+                
                 <form 
                   className="mt-8 space-y-5 text-base"
+                  style={{ display: formStatus.type === 'success' ? 'none' : 'block' }}
                   onSubmit={async (e) => {
                     e.preventDefault();
                     setIsSubmitting(true);
@@ -1522,10 +1544,6 @@ function HomeComponent() {
 
                       const emailData = await emailResponse.json();
 
-                      if (!emailResponse.ok) {
-                        throw new Error(emailData.error || 'Erro ao enviar e-mail');
-                      }
-
                       // Formata telefone para WhatsApp
                       const formattedPhone = formatPhoneNumber(whatsapp);
                       
@@ -1533,49 +1551,50 @@ function HomeComponent() {
                       const texto = `Olá! Gostaria de receber uma proposta personalizada.\n\n*Nome:* ${nome}\n*E-mail:* ${email}\n*WhatsApp:* ${whatsapp}\n\n*Mensagem:*\n${mensagem}`;
                       const url = `https://wa.me/5551980339085?text=${encodeURIComponent(texto)}`;
                       
-                      // Abre WhatsApp
+                      // Abre WhatsApp sempre (mesmo se e-mail falhar)
                       window.open(url, "_blank");
                       
-                      // Mostra mensagem de sucesso
-                      setFormStatus({ 
-                        type: 'success', 
-                        message: 'Formulário enviado com sucesso! Recebemos sua solicitação por e-mail e o WhatsApp será aberto em instantes.' 
-                      });
+                      // Limpa formulário imediatamente
+                      e.currentTarget.reset();
                       
-                      // Limpa formulário após 3 segundos
+                      if (!emailResponse.ok) {
+                        // E-mail falhou, mas WhatsApp foi aberto
+                        console.warn('⚠️ E-mail não foi enviado, mas WhatsApp foi aberto:', emailData);
+                        setFormStatus({ 
+                          type: 'success', 
+                          message: 'WhatsApp aberto! O e-mail pode não ter sido enviado, mas você pode entrar em contato diretamente pelo WhatsApp.' 
+                        });
+                      } else {
+                        // Tudo funcionou
+                        setFormStatus({ 
+                          type: 'success', 
+                          message: 'Formulário enviado com sucesso! Recebemos sua solicitação por e-mail e o WhatsApp foi aberto.' 
+                        });
+                      }
+                      
+                      // Limpa mensagem após 8 segundos
                       setTimeout(() => {
-                        e.currentTarget.reset();
                         setFormStatus({ type: 'idle', message: '' });
-                      }, 5000);
+                      }, 8000);
                       
                     } catch (error) {
                       console.error('Erro ao enviar formulário:', error);
+                      
+                      // Ainda abre WhatsApp mesmo em caso de erro
+                      const formattedPhone = formatPhoneNumber(whatsapp);
+                      const texto = `Olá! Gostaria de receber uma proposta personalizada.\n\n*Nome:* ${nome}\n*E-mail:* ${email}\n*WhatsApp:* ${whatsapp}\n\n*Mensagem:*\n${mensagem}`;
+                      const url = `https://wa.me/5551980339085?text=${encodeURIComponent(texto)}`;
+                      window.open(url, "_blank");
+                      
                       setFormStatus({ 
                         type: 'error', 
-                        message: error instanceof Error ? error.message : 'Erro ao processar formulário. Tente novamente ou entre em contato diretamente.' 
+                        message: 'Erro ao enviar e-mail, mas o WhatsApp foi aberto. Por favor, entre em contato diretamente pelo WhatsApp.' 
                       });
                     } finally {
                       setIsSubmitting(false);
                     }
                   }}
                 >
-                  {formStatus.type === 'success' && (
-                    <div className="rounded-2xl bg-emerald-500/20 border border-emerald-500/30 px-5 py-4 text-emerald-300 text-sm">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle2 size={20} />
-                        <span>{formStatus.message}</span>
-                      </div>
-                    </div>
-                  )}
-                  
-                  {formStatus.type === 'error' && (
-                    <div className="rounded-2xl bg-red-500/20 border border-red-500/30 px-5 py-4 text-red-300 text-sm">
-                      <div className="flex items-center gap-2">
-                        <span>⚠️</span>
-                        <span>{formStatus.message}</span>
-                      </div>
-                    </div>
-                  )}
                   <input
                     type="text"
                     name="nome"
@@ -1593,7 +1612,7 @@ function HomeComponent() {
                   <input
                     type="tel"
                     name="whatsapp"
-                    placeholder="WhatsApp (com DDD, ex: 51 98033-9085)"
+                    placeholder="WhatsApp (com DDD, ex: 51 99999-9999)"
                     required
                     pattern="[0-9\s\-\(\)]+"
                     minLength={10}

@@ -127,48 +127,66 @@ Por favor, responda ao cliente em até 30 minutos conforme prometido.
 </html>
     `.trim();
 
-    // Enviar e-mail usando a API do Resend (recomendado)
-    // Para configurar: crie conta em https://resend.com e adicione a chave API
+    // Enviar e-mail usando a API do Resend
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     
-    if (RESEND_API_KEY) {
-      try {
-        const resendResponse = await fetch('https://api.resend.com/emails', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${RESEND_API_KEY}`,
+    if (!RESEND_API_KEY) {
+      console.error('❌ RESEND_API_KEY não encontrada nas variáveis de ambiente');
+      return NextResponse.json(
+        { 
+          error: 'Serviço de e-mail não configurado. Entre em contato diretamente pelo WhatsApp.',
+          emailSent: false
+        },
+        { status: 500 }
+      );
+    }
+    
+    try {
+      console.log('📧 Tentando enviar e-mail via Resend...');
+      console.log('De:', fromEmail);
+      console.log('Para:', toEmail);
+      
+      const resendResponse = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${RESEND_API_KEY}`,
+        },
+        body: JSON.stringify({
+          from: fromEmail,
+          to: toEmail,
+          subject: subject,
+          html: emailHTML,
+          text: emailBody,
+          reply_to: email,
+        }),
+      });
+
+      const resendData = await resendResponse.json();
+
+      if (!resendResponse.ok) {
+        console.error('❌ Erro ao enviar e-mail via Resend:', resendData);
+        return NextResponse.json(
+          { 
+            error: resendData.message || 'Erro ao enviar e-mail. Tente novamente ou entre em contato pelo WhatsApp.',
+            emailSent: false,
+            details: resendData
           },
-          body: JSON.stringify({
-            from: fromEmail,
-            to: toEmail,
-            subject: subject,
-            html: emailHTML,
-            text: emailBody,
-            reply_to: email, // Permite responder diretamente ao cliente
-          }),
-        });
-
-        const resendData = await resendResponse.json();
-
-        if (!resendResponse.ok) {
-          console.error('Erro Resend:', resendData);
-          throw new Error(resendData.message || 'Erro ao enviar e-mail via Resend');
-        }
-      } catch (error) {
-        console.error('Erro ao enviar e-mail:', error);
-        // Continua mesmo se o e-mail falhar, para não bloquear o fluxo do WhatsApp
-        // Você pode remover este try-catch se quiser que falhe completamente
+          { status: resendResponse.status }
+        );
       }
-    } else {
-      // Log para desenvolvimento quando Resend não está configurado
-      if (process.env.NODE_ENV === 'development') {
-        console.log('📧 E-mail que seria enviado (Resend não configurado):');
-        console.log('Para:', toEmail);
-        console.log('Assunto:', subject);
-        console.log('Corpo:', emailBody);
-        console.log('\n💡 Para ativar o envio de e-mail, configure RESEND_API_KEY no .env.local');
-      }
+
+      console.log('✅ E-mail enviado com sucesso! ID:', resendData.id);
+    } catch (error) {
+      console.error('❌ Erro ao enviar e-mail:', error);
+      return NextResponse.json(
+        { 
+          error: 'Erro ao processar envio de e-mail. Tente novamente ou entre em contato pelo WhatsApp.',
+          emailSent: false,
+          details: error instanceof Error ? error.message : 'Erro desconhecido'
+        },
+        { status: 500 }
+      );
     }
 
     return NextResponse.json(
