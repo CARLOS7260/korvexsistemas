@@ -1575,7 +1575,8 @@ function HomeComponent() {
           </div>
 
           <div className="text-sm text-[#64748b]">
-            © {new Date().getFullYear()} Korvex Sistemas. Todos os direitos reservados.
+            <p>© {new Date().getFullYear()} Korvex Sistemas. Todos os direitos reservados.</p>
+            <p className="mt-2">CNPJ: 63.759.501/0001-76</p>
           </div>
         </div>
       </footer>

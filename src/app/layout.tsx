@@ -19,6 +19,8 @@ const siteUrl = "https://www.korvexsistemas.com.br";
 const siteName = "Korvex Sistemas";
 const siteDescription =
   "Soluções modernas em software, automação comercial e sistemas personalizados.";
+// Adicione seu Facebook App ID aqui (obtenha em https://developers.facebook.com/apps/)
+const facebookAppId = process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || "";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -118,6 +120,7 @@ export default function RootLayout({
       "@type": "Organization",
       name: siteName,
       url: siteUrl,
+      taxID: "63.759.501/0001-76",
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+55-51-98033-9085",
@@ -133,6 +136,9 @@ export default function RootLayout({
     <html lang="pt-BR" className="bg-[#0f172a]">
       <head>
         <link rel="preload" as="image" href="/korvex-3d-06.webp" type="image/webp" fetchPriority="high" />
+        {facebookAppId && (
+          <meta property="fb:app_id" content={facebookAppId} />
+        )}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0f172a] text-[#f3f4f6]`}
